@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Store - Premium Cyberware</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="messageBox" class="global-message-box hidden"></div>
+    <div class="app-container">
+        <header>
+            <div class="logo">Cyber<span>Store</span></div>
+            <div class="wallet-info">
+                <span class="label">Wallet Balance</span>
+                <span class="balance" id="balanceDisplay">$0</span>
+            </div>
+        </header>
+
+        <main id="productGrid" class="product-grid">
+            <!-- Products will be injected here by app.js -->
+        </main>
+        
+        <footer>
+            <button id="resetBtn" class="secondary-btn">Reset Account State</button>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
